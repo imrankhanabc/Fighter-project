@@ -1,0 +1,367 @@
+* {
+    outline: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Sans-serif !important;
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+a,
+span {
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p,
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+/* create-page */
+
+.create-page {
+    display: flex;
+}
+
+.create-left {
+    width: 40%;
+    padding: 50px 0px;
+}
+
+.create-right {
+    width: 60%;
+    text-align: right;
+    padding: 20px;
+}
+
+.create-form {
+    width: 75%;
+    margin: auto;
+
+}
+
+.logo-content {
+    text-align: center;
+}
+
+.c-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.c-text {
+    color: #858585;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.input-box span.label-clr {
+    color: #FF004D;
+    margin-left: 7px;
+
+}
+
+.input-box label {
+    color: #fff;
+    margin-bottom: 5px;
+
+}
+
+.input-box input {
+    background: #1d2626;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+a.btn-default {
+    display: flex;
+    justify-content: center;
+    background: #D08002;
+    margin-top: 100px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+p.login {
+    text-align: center;
+    color: #fff;
+}
+
+p.login a {
+    color: #D08002;
+}
+
+/*  */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input::placeholder {
+    color: #aaa;
+    /* light grey placeholder */
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 18px;
+    color: #9A9E9E;
+    top: 8px;
+
+}
+
+/* signup */
+
+.forget-password span {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+.forget-password a {
+    color: #D08002;
+    font-size: 14px;
+}
+
+.forget-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Hide default checkbox */
+.checkbox-input input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 4px;
+    background: #1d2626;
+    /* default background */
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* When checked */
+.checkbox-input input[type="checkbox"]:checked {
+    background: #d08002;
+    /* ✅ custom background */
+    border-color: #d08002;
+}
+
+/* Add a white checkmark when checked */
+.checkbox-input input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+/* header */
+
+.header .logo img {
+    width: 130px;
+}
+
+.header .menu ul {
+    display: flex;
+    gap: 27px;
+    justify-content: center;
+
+}
+
+.header .menu ul li a {
+    color: #7E7E81;
+    text-decoration: none;
+}
+
+.header .login-btn a {
+    background: #D08002;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    padding: 7px 20px;
+    border-radius: 5px;
+
+}
+
+.header {
+    padding-top: 25px;
+}
+
+/* create-profile */
+
+.create-profile-page {
+    width: 80%;
+    margin: auto;
+}
+
+.create-profile-heading {
+    color: #fff;
+    text-align: center;
+}
+
+.profile-title {
+    font-size: 35px;
+}
+
+.profile-text {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.profile-text span {
+    color: #D08002;
+}
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+p.changeprofile {
+
+
+    color: #D08002;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px 10px 10px 12px;
+    /* space for icon */
+    border: none;
+    border-radius: 6px;
+    background: #2b2b2b;
+}
+
+.input-wrapper .edit-icon {
+    position: absolute;
+    right: 12px;
+    color: #A0A0A0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+    top: 13px
+}
+
+.input-wrapper .edit-icon:hover {
+    color: #d08002;
+    /* highlight on hover */
+}
+
+.form-group label {
+    color: #a2a2a2;
+    margin-bottom: 10px;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(65%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(92%) contrast(90%);
+    cursor: pointer;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    background: #454545;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.custom-select {
+    appearance: none;
+    /* Remove native arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* Add custom arrow */
+    background-image: url("../Assets/drop-icon.webp");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 13px;
+}
+
+/* For old IE/Edge */
+.custom-select::-ms-expand {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .create-right {
+
+        display: none;
+    }
+
+    .create-left {
+        width: 100%;
+    }
+
+    .create-form {
+        width: 90%;
+    }
+}
