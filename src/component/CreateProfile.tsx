@@ -46,34 +46,93 @@ const CreateProfile = () => {
       </div>
             </div>
 
-            <div className='input-box options-box'>
-                <div className='drop-dwon-option'>
-                       <label>Height</label>
-      <div className="input-wrapper">
-        {/* <label htmlFor="cars">Choose a car:</label> */}
-  <select name="cars" id="cars" className="custom-select">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
-  </select>
-      </div>
-                </div>
+            <div className='input-box option-box'>
+  <div className='drop-dwon-option'>
+    <label>Height</label>
+    <div className="input-wrapper">
+      <select name="cars" id="cars" className="custom-select">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+  </div>
 
-                <div className='drop-dwon-option'>
-                       <label>Height</label>
+  <div className='drop-dwon-option'>
+    <label>Height</label>
+    <div className="input-wrapper">
+      <select name="cars" id="cars" className="custom-select">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+  </div>
+</div>
+ <div className='input-box option-box'>
+  <div className='drop-dwon-option'>
+    <label>Handed</label>
+    <div className="input-wrapper">
+      <select name="cars" id="cars" className="custom-select">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+  </div>
+
+  <div className='drop-dwon-option'>
+    <label>Discipline</label>
+    <div className="input-wrapper">
+      <select name="cars" id="cars" className="custom-select">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div className='experience-input'>
+    <div className='input-box'>
+                 <label>Experience</label>
       <div className="input-wrapper">
-        {/* <label htmlFor="cars">Choose a car:</label> */}
-  <select name="cars" id="cars" className="custom-select">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
-  </select>
+        <input type="text" placeholder="12" />
+        <FaEdit className="edit-icon" />
       </div>
-                </div>
-              
             </div>
+
+            <div className='input-box'>
+                 <label>Title/Tournaments</label>
+      <div className="input-wrapper">
+        <input type="text" placeholder="5" />
+        <FaEdit className="edit-icon" />
+      </div>
+            </div>
+    </div>
+
+     <div className='input-box'>
+                 <label>Bio</label>
+      <div className="input-wrapper">
+        <input type="text" placeholder="No fear. No mercy. Just fists, fire, and the will to dominate." />
+        <FaEdit className="edit-icon" />
+      </div>
+            </div>
+
+
+            <div className='input-box'>
+                 <label>Fighter Type</label>
+      <div className="input-wrapper">
+        <input type="text" placeholder="Fighter Type" />
+        <FaEdit className="edit-icon" />
+      </div>
+            </div>
+
+
      
       </div>
     </div>

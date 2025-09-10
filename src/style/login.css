@@ -291,7 +291,7 @@ p.changeprofile {
     /* space for icon */
     border: none;
     border-radius: 6px;
-    background: #2b2b2b;
+    background: #454545;
 }
 
 .input-wrapper .edit-icon {
@@ -348,6 +348,32 @@ select {
     display: none;
 }
 
+.option-box {
+  display: flex;
+  gap: 16px; 
+  margin-bottom: 30px;         /* space between the selects */
+}
+
+.drop-dwon-option {
+  flex: 1;            /* each takes equal width */
+}
+
+.custom-select {
+  width: 100%;        /* make select fill its parent */
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.experience-input {
+    display: flex;
+    gap: 20px;
+}
+
+.experience-input .input-box {
+    width: 50%;
+}
+
+
 
 
 
@@ -364,4 +390,8 @@ select {
     .create-form {
         width: 90%;
     }
+
+    .create-profile-page {
+    width: 90%;
+}
 }
