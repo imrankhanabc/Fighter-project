@@ -4,6 +4,12 @@ import CreateAccount from "./component/CreateAccount";
 import Singup from "./component/Singup";
 import Header from "./component/Header";
 import CreateProfile from "./component/CreateProfile";
+import Footer from "./component/Footer";
+import HeaderMain from "./component/HeaderMain";
+import Heropanel from "./component/Heropanel";
+import FighterSliderpage from "./component/FighterSliderpage";
+import Searchpages from "./component/Searchpages";
+import FighterSliderpagesec from "./component/FighterSliderpagesec";
 
 function App() {
   return (
@@ -12,7 +18,22 @@ function App() {
         <Route path="/header" element={<Header/>} />
         <Route path="/createaccount" element={<CreateAccount/>} />
         <Route path="/signup" element={<Singup/>} />
-        <Route path="/createprofile" element={<CreateProfile/>} />
+        <Route path="/" element={<CreateProfile/>} />
+        <Route path="/footer" element={<Footer/>} />
+        <Route path="/mainheader" element={<HeaderMain/>} />
+        <Route path="/heropanel" element={<Heropanel/>} />
+        <Route path="/fightersliderpage" element={<FighterSliderpage/>} />
+        <Route path="/searchpage" element={<Searchpages/>} />
+        <Route path="/fightersliderpagesec" element={<FighterSliderpagesec/>} />
+
+
+
+
+
+        
+
+
+
 
 
       </Routes>

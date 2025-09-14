@@ -1,8 +1,40 @@
 import React from 'react'
+import imgselect from '../Assets/image-select.webp'
 import profileimage from '../Assets/profileimage.webp'
 import { FaEdit } from "react-icons/fa"; // edit icon
+import { useRef } from "react";
+import '../style/login.css'
+
 
 const CreateProfile = () => {
+  // one state for each image
+  const [profilePreview, setProfilePreview] = React.useState<string>(profileimage);
+  const [selectPreview, setSelectPreview] = React.useState<string>(imgselect);
+
+  // separate refs
+  const profileInputRef = useRef<HTMLInputElement | null>(null);
+  const selectInputRef = useRef<HTMLInputElement | null>(null);
+
+  // open file pickers
+  const handleProfileClick = () => profileInputRef.current?.click();
+  const handleSelectClick = () => selectInputRef.current?.click();
+
+  // handle file change separately
+  const handleProfileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setProfilePreview(imageUrl); // update only profile image
+    }
+  };
+
+  const handleSelectChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setSelectPreview(imageUrl); // update only select image
+    }
+  };
   return (
     <div className='create-profile-page'>
         <div className='create-profile-heading'>
@@ -13,11 +45,21 @@ const CreateProfile = () => {
                 Create your <span> profile</span> and showcase your skills
             </div>
 
-            <div className='profile-image'>
-                        <img src={profileimage} alt='profileimage' />
+            <div className='profile-image' >
+                        <img src={profilePreview} alt='profileimage' />
             </div>
+            <p className='changeprofile'  onClick={handleProfileClick}>Change Profile Picture</p>
 
-            <p className='changeprofile'>Change Profile Picture</p>
+
+             {/* Hidden file input */}
+             <input
+          type="file"
+          accept="image/*"
+          ref={profileInputRef}
+          style={{ display: "none" }}
+          onChange={handleProfileChange}
+        />
+
 
             </div>
 
@@ -131,10 +173,48 @@ const CreateProfile = () => {
         <FaEdit className="edit-icon" />
       </div>
             </div>
+          <div>
 
-
-     
+          </div>
+      
+          <div className='image-selct-text'>
+            <label>Images</label>
+      <div className='images-select' onClick={handleSelectClick}>
+          <img src={selectPreview} alt='profileimage' />
+        </div>
       </div>
+
+      <div className='image-selct-text'>
+            <label>Videos</label>
+      <div className='images-select' onClick={handleSelectClick}>
+          <img src={selectPreview} alt='profileimage' />
+        </div>
+      </div>
+
+
+      <input
+          type="file"
+          accept="image/*"
+          ref={selectInputRef}
+          style={{ display: "none" }}
+          onChange={handleSelectChange}
+        />
+
+<div className='input-box'>
+                 <label>Video Link</label>
+      <div className="input-wrapper">
+        <input type="text" placeholder="https://youtu.be/5URwcJAHUS8?si=FbPb_rq8LWUYdlrK" />
+        <FaEdit className="edit-icon" />
+      </div>
+            </div>
+
+            <a href='#' className='btn-default'> Save</a>
+      </div>
+
+
+      
+      
+      
     </div>
   ) 
 }
