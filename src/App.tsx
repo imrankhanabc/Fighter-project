@@ -10,6 +10,7 @@ import Heropanel from "./component/Heropanel";
 import FighterSliderpage from "./component/FighterSliderpage";
 import Searchpages from "./component/Searchpages";
 import FighterSliderpagesec from "./component/FighterSliderpagesec";
+import Reels from "./component/Reels";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/fightersliderpage" element={<FighterSliderpage/>} />
         <Route path="/searchpage" element={<Searchpages/>} />
         <Route path="/fightersliderpagesec" element={<FighterSliderpagesec/>} />
+        <Route path="/reels" element={<Reels/>} />
+
 
 
 

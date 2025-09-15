@@ -1,0 +1,174 @@
+.reels-page{
+    background-color: #fff;
+}
+
+
+.slider-profile-data {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.slider-profile-img img{
+    width: 55px;
+}
+
+.profile-data {
+    display: flex;
+    align-items: center;
+    gap: 232px;
+}
+
+.profile-name {
+    font-size: 20px;
+}
+
+.profile-name span {
+    font-size: 15px;
+}
+
+.track-name {
+    margin-top: 9px;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+.track-name img {
+    width: 22px;
+}
+.profile-data-right button{
+    background: #D08002;
+    color: #fff;
+    border: none;
+    padding: 3px 22px;
+    border-radius: 50px;
+
+}
+
+.reel-vertical-swiper {
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/* .mySwiper-reels .swiper-slide {
+    height: auto !important;
+    
+} */
+.slider-main-image {
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.chat-left {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    left: 12px;
+}
+
+.image-upper-right {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 20%;
+}
+
+.chat-innerdata {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.chat-innerdata .chat-image img{
+    width: 30px !important;
+}
+
+.slider-main-image img {
+    width: 100%;
+}
+
+.mySwiper {
+    height: 100vh; /* full viewport height */
+  }
+
+
+
+  
+/* .chat-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.slider-image-viewer {
+    display: flex;
+    gap: 20px;
+}
+.chat-innerdata .chat-image img{
+    width: 35px;
+    margin: 5px 0px;
+}
+.chat-innerdata {
+    text-align: center;
+} */
+
+
+@media screen and (max-width: 767px) {
+    .slider-profile-img img {
+        width: 40px;
+    }
+
+    .profile-name {
+        font-size: 15px;
+    }
+
+    .profile-name span {
+        font-size: 12px;
+    }
+
+    .profile-data {
+    
+        gap: 50px;
+    }
+
+    .track-name {
+        font-size: 11px;
+        margin-top: 0px;
+    }
+
+    .track-name img {
+        width: 14px;
+    }
+
+    .profile-data-right button {
+        
+        padding: 3px 20px;
+        font-size: 12px;
+    }
+
+    .slider-main-image {
+        width: 100%;
+        margin-left: 0;
+      
+    }
+
+    .reel-vertical-swiper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .slider-profile-data {
+      
+        gap: 10px;
+    }
+    
+    
+}
+
