@@ -10,7 +10,7 @@ import { Autoplay } from "swiper/modules";
 
 import sliderprofile from "../Assets/slider-profile.webp";
 import tone from "../Assets/tone-icon.webp";
-import slidermainimage from "../Assets/slider-main-image.webp";
+import slidermainimage from "../Assets/slider-image-reel.webp";
 
 import chat from "../Assets/chat.webp";
 import heart from "../Assets/heart.webp";
@@ -30,10 +30,10 @@ const Reels = () => {
                   direction={"vertical"}
                   slidesPerView={1}
                   spaceBetween={10}
-                  autoplay={{
-                    delay: 3000, // 3 seconds per slide
-                    disableOnInteraction: false, // keep autoplay after user swipes
-                  }}
+                //   autoplay={{
+                //     delay: 3000, // 3 seconds per slide
+                //     disableOnInteraction: false, // keep autoplay after user swipes
+                //   }}
                   modules={[Autoplay]}
                   className="mySwiper"
                   breakpoints={{
