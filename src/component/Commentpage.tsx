@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../style/home.css'
+
 import forumprofile from "../Assets/forum-profile.webp";
 
 import fchat from "../Assets/f-chat.webp";
@@ -14,8 +16,127 @@ import great from'../Assets/great.webp';
 import commentsectionomage from "../Assets/comment-sec-pic.webp";
 import mainimagecomment from '../Assets/main-comment-image.webp';
 
+import commitimg from '../Assets/commit-modal-img.webp'
+
 const Commentpage = () => {
   return (
+
+<>
+
+
+ {/* model */}
+    <div>
+      <div
+        className="modal fade search-modal comment-modal"
+        id="exampleModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog ">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+               {/* <span><i className="ri-arrow-left-line"></i></span> Filter */}
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+
+                  <div className='comment-modal-inner'>
+                     <div className='modal-img'>
+                      <img src={commitimg} alt='commitimgfrom' />
+                      </div>  
+
+                      <h5>Why are you reporting this post?</h5>
+
+
+
+                       <div className='radio-content'>
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+                            <label htmlFor="html">I just don’t like it</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">Harassment or Bullying</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">Violence or Dangerous Organisatior</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">Hate Speech or Symbols</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">Its a spam</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">Misinformation</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">False Information</label>
+
+                            </div>
+
+                            <div className='radio-inner'>
+                            <input type="radio" id="html" name="fav_language" value="HTML"/>
+
+                      <label htmlFor="html">Intellectual Property</label>
+
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                      
+
+                        <div className="footer-modal">
+              <a className='filter'>
+              Cancel
+
+              </a>
+              <a className='filter apply'>
+              Report
+              </a>
+            </div>
+
+              
+              </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+{/* modal end */}
 
     <div className='comment-page'>
             <div className='container'>
@@ -155,7 +276,10 @@ const Commentpage = () => {
                     </div>
 
                     <div className="f-chat">
-                      <img src={fshare} alt="fchatimgfrom" />
+                      <img src={fshare} alt="fchatimgfrom"
+                      data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+                      />
                     </div>
                   </div>
 
@@ -259,6 +383,7 @@ const Commentpage = () => {
                     </div>
                 </div>
     </div>
+    </>
   )
 }
 

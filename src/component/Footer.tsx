@@ -1,18 +1,24 @@
 import React from 'react'
 
+import footerbg from '../Assets/footer-sec-bg.webp'
+
 const Footer = () => {
   return (
     <>
     <div className='main-footer'>
 
-       <div className='footer-up-bg'>
-        
-        </div> 
+                 
    
     <div className='footer'>
-  
+
+       
+    
 
         <div className='footer-inner'>
+
+             <div className='footer-up-bg'>
+                <img src={footerbg} alt='footerbg' />
+        </div>
         <div className='col-md-12'>
             <div className='container'>
             <div className='row'>
@@ -22,7 +28,7 @@ const Footer = () => {
                         </div>
                 </div>
 
-                <div className='col-md-5'>
+                <div className='col-md-6 col-12'>
                     <div className='footer-input'>
                     <input type='text' placeholder='Your Email Address' />
                     <i className="ri-arrow-right-line"></i>
@@ -47,7 +53,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className='col-md-5'>
+                <div className='col-md-6 col-12'>
                     <div className='socail-link'>
                         <div className='socail-link-content'>
                                 <a href='#'>Linkedin</a>
@@ -64,10 +70,10 @@ const Footer = () => {
                 </div>
                 
 
-                <div className='col-md-12'>
+                <div className='col-md-12 col-12'>
 
                     <div className='footer-down-content'>
-                        <div className='col-md-6'>
+                        <div className='col-md-6 col-12'>
                         <div className='footer-down'>
                         <span>C</span> <p>RaaquaTech - 2023 All right reserved.</p>
                     </div>
@@ -89,6 +95,9 @@ const Footer = () => {
         </div>
             </div>
         </div>
+
+
+      
             
        
     </div>

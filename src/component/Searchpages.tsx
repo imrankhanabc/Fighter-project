@@ -14,17 +14,6 @@ const Searchpages = () => {
     <>
     {/* model */}
     <div>
-      {/* Button trigger modal */}
-      {/* <button
-        type="button"
-        className="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Launch demo modal
-      </button> */}
-
-      {/* Modal */}
       <div
         className="modal fade search-modal"
         id="exampleModal"
@@ -145,7 +134,6 @@ const Searchpages = () => {
         </div>
       </div>
     </div>
-    {/*  */}
     <div className='search-page'>
 
         <div className='container'>

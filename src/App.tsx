@@ -13,6 +13,8 @@ import FighterSliderpagesec from "./component/FighterSliderpagesec";
 import Reels from "./component/Reels";
 import Forum from "./component/Forum";
 import Commentpage from "./component/Commentpage";
+import Marketplace from "./component/Marketplace";
+import Productpage from "./component/Productpage";
 
 function App() {
   return (
@@ -31,6 +33,10 @@ function App() {
         <Route path="/reels" element={<Reels/>} />
         <Route path="/forum" element={<Forum/>} />
         <Route path="/commentpage" element={<Commentpage/>} />
+        <Route path="/marketplace" element={<Marketplace/>} />
+        <Route path="/productpage" element={<Productpage/>} />
+
+
 
 
 

@@ -4,6 +4,7 @@ import profileimage from '../Assets/profileimage.webp'
 import { FaEdit } from "react-icons/fa"; // edit icon
 import { useRef } from "react";
 import '../style/login.css'
+import Footer from './Footer';
 
 
 const CreateProfile = () => {
@@ -36,6 +37,7 @@ const CreateProfile = () => {
     }
   };
   return (
+    <>
     <div className='create-profile-page'>
         <div className='create-profile-heading'>
             <div className='profile-title'>
@@ -214,8 +216,9 @@ const CreateProfile = () => {
 
       
       
-      
     </div>
+      <Footer/>
+</>
   ) 
 }
 

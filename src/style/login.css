@@ -405,29 +405,26 @@ select {
 
 .footer {
     color: #fff;
-    background: #121212;
+    /* background: #121212; */
     padding: 30px 20px;
    
    
 }
-.footer-up-bg{
-    background-image: url('../Assets/footer-top-bg.png');
-height: 100vh;
-    background-size: cover;
-    background-position: center;
 
-
-}
 
 .footer-title {
     font-size: 30px;
-    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
+
+
 .footer-input input {
     border-radius: 5px;
     border: 1px solid #fff;
     background: none;
     padding: 10px 15px;
+    width: 100%;
 
 }
 
@@ -493,6 +490,15 @@ font-size: 20px;
 .footer-inner {
     width: 70%;
     margin: auto;
+    position: relative;
+}
+.footer-up-bg{
+        position: absolute;
+    top: -62%;
+}
+
+.main-footer {
+    margin-top: 190px;
 }
 
 .footer-down {
@@ -522,18 +528,32 @@ font-size: 20px;
     transform: .3s linear;
 }
 
-.footer-up-bg {
-    width: 100%;
+
+/* .main-footer{
+    margin-top: 165px;
+} */
+
+/* .footer-up-bg {
     background-image: url('../Assets/footer-top-bg.png');
-    height: 100vh;
     background-size: cover;
     background-position: center;
-    position: absolute;
-    z-index: 2;
-    top: 8%;
-}
-.main-footer{
-    margin-top: 165px;
+    height: 100vh; */
+/* } */
+
+/* .main-footer{
+        background-image: url('../Assets/footer-up-bg.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+} */
+
+/* .footer-up-bg{ */
+    /* background-image: url('../Assets/footer-sec-bg.webp');
+    background-size: cover;
+    background-position: center;
+} */
+  .btn-market{
+    display: none;
 }
  
 
@@ -554,5 +574,72 @@ font-size: 20px;
 
     .create-profile-page {
     width: 90%;
+}
+
+.location-inner {
+    margin-bottom: 30px;
+}
+
+.footer-inner {
+    width: 100%;
+}
+.footer-input {
+   
+    justify-content: space-between;
+}
+
+.footer-input input {
+   
+    width: 80%;
+}
+
+.location {
+    display: block;
+  
+}
+
+.socail-link-content {
+
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.footer-down-links {
+   
+    display: none;
+}
+
+.footer-up-bg {
+    top: -75px;
+}
+
+.main-footer {
+    margin-top: 100px;
+
+
+}
+
+.create-profile-page .btn-default {
+    float: none;
+}
+
+  .btn-market{
+    display: block;
+    text-align: center;
+}
+
+.btn-market a{
+    border: 1px solid #D08002;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.btn-market a:hover{
+    opacity: 0.7;
+    transition: .3s linear;
 }
 }

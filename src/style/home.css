@@ -90,13 +90,61 @@ ul {
     }
 
     /* hero-panel */
-    /* .hero-panel{
-        background-image: url('../Assets/hero-panel-bg.webp');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-    } */
+    .hero-panel {
+    display: flex;
+    padding-left: 120px;
+}
+
+.hero-text {
+    color: #808080;
+    font-weight: 600;
+}
+
+.hero-left {
+    width: 50%;
+    padding-top: 90px;
+}
+
+.hero-right {
+    width: 50%;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    width: 80%;
+    line-height: 51px;
+}
+
+.hero-desc {
+    color: #808080;
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
+.hero-title span{
+        color: #D08002;
+    font-weight: 600;
+
+}
+
+a.main-btn {
+    text-decoration: none;
+    background: #D08002;
+    color: #fff;
+    border-radius: 10px;
+   
+    padding: 10px 25px;
+    display: inline-block;
+}
+a.main-btn:hover {
+    opacity: 0.7;
+    transition: .3s linear;
+}
+
 /* home-page */
+
+
 
 /* fighter-slider */
 
@@ -659,6 +707,79 @@ ul {
         margin-top: 20px;
     }
 
+
+    /* commit-modal */
+   
+
+ .modal-img img {
+    width: 60px;
+ }
+
+ .comment-modal .modal-header{
+    display: none;
+ }
+
+ .comment-modal .radio-inner {
+
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.comment-modal-inner{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.comment-modal-inner h5{
+        padding: 20px 0px;
+    color:#fff
+}
+
+  .comment-modal-inner input[type="radio"] {
+  border: 2px solid #fff;
+  }
+
+
+  .comment-modal-inner input[type="radio"]:checked {
+  border-color: #DD9924 !important; /* ✅ change border to yellow when checked */
+}
+
+.comment-modal .footer-modal {
+   
+    margin-top: 5px;
+    justify-content: center;
+    gap: 12px;
+}
+
+.comment-modal .footer-modal a.filter {
+    padding: 7px 40px;
+    border-radius: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.comment-modal .footer-modal a.apply {
+ 
+    border: none !important;
+}
+.comment-modal .modal-content{
+    width: 80%;
+    margin: auto;
+}
+
+
+    
+
+
+  
+
+
+
+ /*  */
+
     .fightersliderpagesec .fighterslider-profile-detail-right {
      
         gap: 60px;
@@ -672,6 +793,7 @@ ul {
         display: flex ;
         gap: 25px;
     }
+  
    
 
 
@@ -682,6 +804,31 @@ ul {
         padding: 20px 0px;
     }
 
+    .hero-left {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 31px;
+    width: 100%;
+    line-height: 41px;
+}
+
+.hero-desc {
+   
+    margin: 10px 12px;
+}
+
+.hero-panel {
+    display: block;
+    padding-left: 0;
+}
+
+.hero-right {
+    width: 100%;
+  
+}
     .f-left {
         text-align: center;
     }
@@ -887,6 +1034,11 @@ ul {
 
 a.edit.edit-mobile.report-mb {
     background: #5D5D5D;
+}
+
+.comment-modal .modal-content{
+    width: 80%;
+    margin: auto;
 }
 
 

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import heroright from '../Assets/hero-panel.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -11,6 +10,8 @@ import fslidertwo from '../Assets/f-slider-image-two.webp'
 import fsliderthree from '../Assets/f-slider-image-three.webp'
 import fsliderfour from '../Assets/f-slider-image-four.webp'
 import fsliderfive from '../Assets/f-slider-image-five.webp'
+
+import heroright from '../Assets/heropanel-right.webp'
 
 // forum section
 
@@ -28,6 +29,7 @@ import feedsix from '../Assets/feed-six.webp'
 import marketone from '../Assets/market-one.webp'
 import markettwo from '../Assets/market-two.webp'
 import marketthree from '../Assets/market-three.webp'
+import Footer from './Footer';
 
 const Heropanel = () => {
     const fighters = [
@@ -69,32 +71,31 @@ const Heropanel = () => {
   return (
     <>
 
-     {/* <div className='hero-panel'>
+     <div className='hero-panel'>
 
-    //  
-    //                 <div className='hero-left'>
-    //                         <div className='hero-text'>
-    //                         Feature Fighter of the week
-    //                         </div>
+      
+                     <div className='hero-left'>
+                             <div className='hero-text'>
+                             Feature Fighter of the week
+                             </div>
 
-    //                         <div className='hero-title'>
-    //                        <span>Dynamic power</span> , dazzling footwork, Uncover highlights!
-    //                         </div>
+                             <div className='hero-title'>
+                            <span>Dynamic power</span>, {""}dazzling footwork, Uncover highlights!
+                             </div>
 
-    //                         <div className='hero-desc'>
-    //                         Every week, a new Star Fighter shines! Dynamic power, dazzling footwork. Discover their thrilling highlights, stats, and exclusive interviews now!
-    //                         </div>
+                             <div className='hero-desc'>
+                             Every week, a new Star Fighter shines! Dynamic power, dazzling footwork. Discover their thrilling highlights, stats, and exclusive interviews now!
+                             </div>
 
-    //                         <a href='#' className='main-btn'>Get Started</a>
-    //                 </div>
+                             <a href='#' className='main-btn'>Get Started</a>
+                     </div>
 
-    //             <div className='hero-right'>
-    //                 <img src={heroright} alt='heropanel' />
-    //                             </div>
+                 <div className='hero-right'>
+                  <img src={heroright} alt='heropanel' />
+                                 </div>
 
-               
-    //      
- </div> */}
+        
+ </div>
 
 
 
@@ -584,7 +585,7 @@ const Heropanel = () => {
 
 
                             <div className='row mobile-market'>
-                            <div className='col-md-6 col-12 order-3 order-md-3'>
+                            <div className='col-md-6 col-12 order-3 order-md-1  '>
                             <div className='market-inner'>
 
                                 <div>
@@ -605,7 +606,7 @@ const Heropanel = () => {
                                     </div>
                             </div>
 
-                            <div className='col-md-3 col-6 order-2'>
+                            <div className='col-md-3 col-6 order-1 order-md-2  '>
                             <div className='market-inner'>
 
                                 <img src={markettwo} className='marlet-two' alt='markettwo' />
@@ -622,7 +623,7 @@ const Heropanel = () => {
                                     </div>
                             </div>
 
-                            <div className='col-md-3 col-6 order-1'>
+                            <div className='col-md-3 col-6 order-1 order-md-3  '>
                                     <div className='market-inner'>
                                         <img src={marketone} className='marlet-two' alt='marketone' />
                                     </div>
@@ -637,9 +638,21 @@ const Heropanel = () => {
                                     </div>
                                     </div>
                             </div>
+
+                            
+                            </div>
+
+                            <div className='btn-market'>
+                            <a href='#'>View More</a>
                             </div>
                     </div>
     </div>
+    
+
+
+    <Footer/>
+
+   
 
     
 
