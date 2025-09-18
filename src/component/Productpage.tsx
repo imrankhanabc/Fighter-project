@@ -14,16 +14,21 @@ import type { Swiper as SwiperClass } from 'swiper'; // ✅ Import type
 import productsliderone from '../Assets/product-sider-image.webp'
 
 import productslidertwo from '../Assets/product-slider-two.webp'
+import Footer from './Footer';
+import HeaderMain from './HeaderMain';
 
 const Productpage: React.FC = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null); // ✅ typed correctly
 
   return (
+    <>
+
+    <HeaderMain/>
     <div className="product-page main-padding">
             <div className='product-detail-page'>
          <div className='container'>
                 <div className='row'>
-                <div className='col-md-6'>
+                <div className='col-md-6 col-12'>
                 <div className='product-left'>
 
                        <Swiper
@@ -57,7 +62,7 @@ const Productpage: React.FC = () => {
                     
                
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6 col-12'>
                     <div className='product-right'>
 
                         <div className='product-title-right'>
@@ -141,14 +146,33 @@ const Productpage: React.FC = () => {
                                         </div>  
                                 </div>
                                 </div>  
+
+
+                               <button className='product-btn'>Contact Seller</button>
                         </div>
                 </div>
+                </div>
+
+
+                <div className='col-md-12'>
+                         <div className='main-heading main-padding'>
+            <div className='heading'>
+            Related Products
+            </div>
+
+            <div className='text'>
+         Shop your favourite <span>boxing products</span> and enjoy your game 
+            </div>
+        </div>
                 </div>
         </div>
             </div>
        
     
     </div>
+
+    <Footer/>
+    </>
   );
 };
 

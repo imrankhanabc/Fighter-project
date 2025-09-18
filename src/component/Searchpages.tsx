@@ -5,6 +5,7 @@ import popularone from '../Assets/f-slider-image-two.webp'
 import populartwo from '../Assets/f-slider-image.webp'
 import popularthree from '../Assets/f-slider-image-three.webp'
 import Footer from './Footer'
+import HeaderMain from './HeaderMain'
 
 
 
@@ -134,6 +135,8 @@ const Searchpages = () => {
         </div>
       </div>
     </div>
+
+    <HeaderMain/>
     <div className='search-page'>
 
         <div className='container'>
@@ -300,7 +303,7 @@ const Searchpages = () => {
       
     </div>
 
-    {/* <Footer/> */}
+    <Footer/>
     </>
   )
 }

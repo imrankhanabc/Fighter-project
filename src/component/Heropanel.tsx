@@ -30,6 +30,7 @@ import marketone from '../Assets/market-one.webp'
 import markettwo from '../Assets/market-two.webp'
 import marketthree from '../Assets/market-three.webp'
 import Footer from './Footer';
+import HeaderMain from './HeaderMain';
 
 const Heropanel = () => {
     const fighters = [
@@ -70,6 +71,8 @@ const Heropanel = () => {
       
   return (
     <>
+
+    <HeaderMain/>
 
      <div className='hero-panel'>
 

@@ -23,10 +23,10 @@ function App() {
         <Route path="/header" element={<Header/>} />
         <Route path="/createaccount" element={<CreateAccount/>} />
         <Route path="/signup" element={<Singup/>} />
-        <Route path="/" element={<CreateProfile/>} />
+        <Route path="/createprofile" element={<CreateProfile/>} />
         <Route path="/footer" element={<Footer/>} />
         <Route path="/mainheader" element={<HeaderMain/>} />
-        <Route path="/heropanel" element={<Heropanel/>} />
+        <Route path="/" element={<Heropanel/>} />
         <Route path="/fightersliderpage" element={<FighterSliderpage/>} />
         <Route path="/searchpage" element={<Searchpages/>} />
         <Route path="/fightersliderpagesec" element={<FighterSliderpagesec/>} />

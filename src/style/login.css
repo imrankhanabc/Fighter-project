@@ -49,7 +49,7 @@ ul {
 .create-right {
     width: 60%;
     text-align: right;
-    padding: 20px;
+    padding-top: 25px;
 }
 
 .create-form {
@@ -117,6 +117,7 @@ a.btn-default {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 a.btn-default:hover {
     opacity: 0.7;
     transition: .3s linear;
@@ -226,6 +227,13 @@ p.login a {
 .header .menu ul li a {
     color: #7E7E81;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .menu ul li a:hover {
+    opacity: 0.7;
+    transition: .3s ease-in-out;
 }
 
 .header .login-btn a {
@@ -239,7 +247,13 @@ p.login a {
 }
 
 .header {
-    padding-top: 25px;
+    padding: 15px 0px;
+    background: #191919;
+}
+
+
+.header .row {
+    align-items: center;
 }
 
 /* create-profile */
@@ -247,6 +261,7 @@ p.login a {
 .create-profile-page {
     width: 80%;
     margin: auto;
+    padding-top: 50px;
 }
 
 .create-profile-heading {
@@ -256,6 +271,7 @@ p.login a {
 
 .profile-title {
     font-size: 35px;
+    font-weight: 500;
 }
 
 .profile-text {
@@ -357,19 +373,22 @@ select {
 }
 
 .option-box {
-  display: flex;
-  gap: 16px; 
-  margin-bottom: 30px;         /* space between the selects */
+    display: flex;
+    gap: 16px;
+    margin-bottom: 30px;
+    /* space between the selects */
 }
 
 .drop-dwon-option {
-  flex: 1;            /* each takes equal width */
+    flex: 1;
+    /* each takes equal width */
 }
 
 .custom-select {
-  width: 100%;        /* make select fill its parent */
-  padding: 10px;
-  border-radius:  5px !important;
+    width: 100%;
+    /* make select fill its parent */
+    padding: 10px;
+    border-radius: 5px !important;
 }
 
 .experience-input {
@@ -382,33 +401,37 @@ select {
 }
 
 .custom-select option {
-    background-color: #272727; /* your color */
+    background-color: #272727;
+    /* your color */
     border: 1px solid #454545;
-  }
-  .images-select img{
-    width: 70px;
-  }
+}
 
-  .images-select {
+.images-select img {
+    width: 70px;
+}
+
+.images-select {
     margin-bottom: 20px;
 }
+
 .create-profile-page .btn-default {
     float: right;
     margin-top: 0;
 
 }
+
 /* footer */
 
 /* .footer-up-bg{ */
-  
+
 /* } */
 
 .footer {
     color: #fff;
     /* background: #121212; */
     padding: 30px 20px;
-   
-   
+
+
 }
 
 
@@ -433,7 +456,8 @@ select {
     align-items: center;
     gap: 20px;
 }
-.footer-input i{
+
+.footer-input i {
     color: #364BFE;
     background: #fff;
     padding: 7px 15px;
@@ -452,8 +476,9 @@ select {
     display: flex;
     gap: 20px;
 }
-.location-inner i{
-font-size: 20px;
+
+.location-inner i {
+    font-size: 20px;
 }
 
 .location-text {
@@ -462,23 +487,26 @@ font-size: 20px;
 
 .footer-input input::placeholder {
     color: #fff !important;
-  }
+}
 
-  .socail-link-content {
+.socail-link-content {
     display: flex;
     justify-content: center;
     gap: 130px;
     margin-bottom: 30px;
 }
+
 .socail-link-content a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
 }
+
 .socail-link-content a:hover {
     opacity: 0.7;
     transition: .3s linear;
 }
+
 .footer-down-content {
     margin-top: 50px;
     display: flex;
@@ -492,8 +520,9 @@ font-size: 20px;
     margin: auto;
     position: relative;
 }
-.footer-up-bg{
-        position: absolute;
+
+.footer-up-bg {
+    position: absolute;
     top: -62%;
 }
 
@@ -505,11 +534,13 @@ font-size: 20px;
     display: flex;
     gap: 15px;
 }
+
 .footer-down-links {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
+
 .footer-down-links i {
     border: 1px solid #fff;
     padding: 20px;
@@ -523,6 +554,7 @@ font-size: 20px;
     cursor: pointer;
 
 }
+
 .footer-down-links i:hover {
     opacity: 0.7;
     transform: .3s linear;
@@ -548,14 +580,14 @@ font-size: 20px;
 } */
 
 /* .footer-up-bg{ */
-    /* background-image: url('../Assets/footer-sec-bg.webp');
+/* background-image: url('../Assets/footer-sec-bg.webp');
     background-size: cover;
     background-position: center;
 } */
-  .btn-market{
+.btn-market {
     display: none;
 }
- 
+
 
 
 @media screen and (max-width: 767px) {
@@ -573,73 +605,74 @@ font-size: 20px;
     }
 
     .create-profile-page {
-    width: 90%;
-}
+        width: 90%;
+    }
 
-.location-inner {
-    margin-bottom: 30px;
-}
+    .location-inner {
+        margin-bottom: 30px;
+    }
 
-.footer-inner {
-    width: 100%;
-}
-.footer-input {
-   
-    justify-content: space-between;
-}
+    .footer-inner {
+        width: 100%;
+    }
 
-.footer-input input {
-   
-    width: 80%;
-}
+    .footer-input {
 
-.location {
-    display: block;
-  
-}
+        justify-content: space-between;
+    }
 
-.socail-link-content {
+    .footer-input input {
 
-    justify-content: flex-start;
-    gap: 100px;
-}
+        width: 80%;
+    }
 
-.footer-down-links {
-   
-    display: none;
-}
+    .location {
+        display: block;
 
-.footer-up-bg {
-    top: -75px;
-}
+    }
 
-.main-footer {
-    margin-top: 100px;
+    .socail-link-content {
+
+        justify-content: flex-start;
+        gap: 100px;
+    }
+
+    .footer-down-links {
+
+        display: none;
+    }
+
+    .footer-up-bg {
+        top: -75px;
+    }
+
+    .main-footer {
+        margin-top: 100px;
 
 
-}
+    }
 
-.create-profile-page .btn-default {
-    float: none;
-}
+    .create-profile-page .btn-default {
+        float: none;
+    }
 
-  .btn-market{
-    display: block;
-    text-align: center;
-}
+    .btn-market {
+        display: block;
+        text-align: center;
+    }
 
-.btn-market a{
-    border: 1px solid #D08002;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
+    .btn-market a {
+        border: 1px solid #D08002;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
 
-}
+    }
 
-.btn-market a:hover{
-    opacity: 0.7;
-    transition: .3s linear;
-}
+    .btn-market a:hover {
+        opacity: 0.7;
+        transition: .3s linear;
+    }
 }

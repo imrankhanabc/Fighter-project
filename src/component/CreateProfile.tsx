@@ -5,6 +5,7 @@ import { FaEdit } from "react-icons/fa"; // edit icon
 import { useRef } from "react";
 import '../style/login.css'
 import Footer from './Footer';
+import Header from './Header';
 
 
 const CreateProfile = () => {
@@ -38,6 +39,8 @@ const CreateProfile = () => {
   };
   return (
     <>
+
+    <Header/>
     <div className='create-profile-page'>
         <div className='create-profile-heading'>
             <div className='profile-title'>

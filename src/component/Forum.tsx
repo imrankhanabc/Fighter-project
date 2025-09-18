@@ -9,9 +9,14 @@ import mainprofileone from "../Assets/main-profile-one.webp";
 import mainprofiletwo from "../Assets/main-profile-two.webp";
 import commentpic from "../Assets/comment-pic.webp";
 import great from'../Assets/great.webp';
+import HeaderMain from "./HeaderMain";
+import Footer from "./Footer";
 
 const Forum = () => {
   return (
+
+    <>
+    <HeaderMain/>
     <div className="forum-page">
       <div className="form-content">
         <div className="container">
@@ -400,6 +405,9 @@ const Forum = () => {
 
 
     </div>
+    <Footer/>
+    </>
+
   );
 };
 

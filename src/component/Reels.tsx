@@ -17,10 +17,14 @@ import heart from "../Assets/heart.webp";
 import share from "../Assets/share.webp";
 
 import "../style/reel.css";
+import HeaderMain from "./HeaderMain";
+import Footer from "./Footer";
 
 const Reels = () => {
   return (
     <>
+
+    <HeaderMain/>
       <div className="reels-page">
         <div className="container">
           <div className="row">
@@ -570,6 +574,7 @@ const Reels = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

@@ -4,11 +4,14 @@ import '../style/reel.css'
 
 import mone from '../Assets/m-p-one.webp'
 import Footer from './Footer'
+import HeaderMain from './HeaderMain'
 
 const Marketplace = () => {
   return (
 
     <>
+
+    <HeaderMain/>
     <div className='marketplace-page'>
 
         
@@ -42,7 +45,7 @@ const Marketplace = () => {
             </div>
 
 
-            <div className='col-md-3'>
+            <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -83,7 +86,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -124,7 +127,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -165,7 +168,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -206,7 +209,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -247,7 +250,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -288,7 +291,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -329,7 +332,7 @@ const Marketplace = () => {
             </div>
             </div>
 
-             <div className='col-md-3'>
+             <div className='col-md-3 col-6'>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />

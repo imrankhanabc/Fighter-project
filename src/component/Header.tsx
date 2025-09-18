@@ -1,5 +1,6 @@
 import React from 'react'
 import headerlogo from '../Assets/header-logo.webp'
+import '../style/login.css'
 
 const Header = () => {
   return (

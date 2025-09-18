@@ -1,12 +1,12 @@
 
 
 
-.slider-profile-data {
+.reels-page .slider-profile-data {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-.slider-profile-img img{
+.reels-page .slider-profile-img img{
     width: 55px;
 }
 
@@ -43,7 +43,7 @@
 
 }
 
-.reel-vertical-swiper {
+.reels-page .reel-vertical-swiper {
     width: 50%;
     margin: auto;
 }
@@ -54,7 +54,7 @@
     height: auto !important;
     
 } */
-.slider-main-image {
+.reels-page .slider-main-image {
     width: 50%;
     margin-left: 80px;
     margin-top: 20px;
@@ -92,10 +92,14 @@
     width: 100%;
 }
 
-.mySwiper {
-    height: 100vh; /* full viewport height */
+.reels-page .mySwiper {
+    height: 100vh !important; /* full viewport height */
   }
 /* forum */
+
+.forum-page {
+    margin-top: 50px;
+}
 
 
 .forum-tabs {
@@ -106,6 +110,7 @@
     -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
     scrollbar-width: none; /* hide scrollbar for Firefox */
     justify-content: center;
+    margin-bottom: 10px;
   }
   
   .forum-tabs::-webkit-scrollbar {
@@ -344,6 +349,10 @@ width: 40%;
 }
 
 /* marketplace page */
+
+.marketplace-page {
+    margin-top: 45px;
+}
 .marketplace-page .forum-tabs {
     margin-top: 45px;
     margin-bottom: 20px;
@@ -473,15 +482,28 @@ width: 50%;
       
     }
 
-    .reel-vertical-swiper {
+    .reels-page .reel-vertical-swiper {
         width: 100%;
         margin: auto;
     }
 
+    .reels-page .slider-main-image {
+    width: 100%;
+    margin-left: 0px;
+   
+}
+
+.slider-main-image img {
+    width: 100%;
+}
     .slider-profile-data {
       
         gap: 10px;
     }
+
+    .reels-page .mySwiper {
+    height: 85vh !important;
+}
 
     .forum-data {
         display: flex;

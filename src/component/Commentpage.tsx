@@ -17,6 +17,8 @@ import commentsectionomage from "../Assets/comment-sec-pic.webp";
 import mainimagecomment from '../Assets/main-comment-image.webp';
 
 import commitimg from '../Assets/commit-modal-img.webp'
+import HeaderMain from './HeaderMain';
+import Footer from './Footer';
 
 const Commentpage = () => {
   return (
@@ -138,7 +140,9 @@ const Commentpage = () => {
 
 {/* modal end */}
 
-    <div className='comment-page'>
+<HeaderMain/>
+
+    <div className='forum-page comment-page'>
             <div className='container'>
                 <div className='row'>
                 <div className="col-md-12">
@@ -383,6 +387,8 @@ const Commentpage = () => {
                     </div>
                 </div>
     </div>
+
+    <Footer/>
     </>
   )
 }

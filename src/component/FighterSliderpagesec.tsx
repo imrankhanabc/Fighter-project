@@ -8,6 +8,7 @@ import sliderinnertwo from '../Assets/slider-inner-two.webp'
 import sliderinnerthree from '../Assets/slider-inner-three.webp'
 import sliderinnerfour from '../Assets/slider-inner-four.webp'
 import sliderinnerfive from '../Assets/slider-inner-five.webp'
+import Footer from './Footer'
 
 const FighterSliderpagesec = () => {
   return (
@@ -113,6 +114,8 @@ const FighterSliderpagesec = () => {
     
             </div>
         </div>
+
+        <Footer/>
     
         </>
       )
