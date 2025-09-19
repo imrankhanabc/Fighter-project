@@ -31,6 +31,7 @@ import markettwo from '../Assets/market-two.webp'
 import marketthree from '../Assets/market-three.webp'
 import Footer from './Footer';
 import HeaderMain from './HeaderMain';
+import { Link } from "react-router-dom";
 
 const Heropanel = () => {
     const fighters = [
@@ -135,10 +136,10 @@ const Heropanel = () => {
                 el: ".swiper-pagination-home", // default for desktop
                 clickable: true,
               }}
-              autoplay={{
-                delay: 1000,
-                disableOnInteraction: false,
-              }}
+            //   autoplay={{
+            //     delay: 1000,
+            //     disableOnInteraction: false,
+            //   }}
               spaceBetween={10}
               slidesPerView={5}
               breakpoints={{
@@ -164,6 +165,7 @@ const Heropanel = () => {
             >
               {fighters.map((fighter, index) => (
         <SwiperSlide key={index}>
+          <Link to="/searchpage" style={{ textDecoration: "none", color: "inherit" }}>
           <div className="slider-content">
             <div className="slide-image">
               <img src={fighter.img} alt={fighter.name} />
@@ -173,6 +175,7 @@ const Heropanel = () => {
               <div className="progile-name">{fighter.username}</div>
             </div>
           </div>
+          </Link>
         </SwiperSlide>
       ))}
             

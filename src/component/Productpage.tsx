@@ -17,12 +17,92 @@ import productslidertwo from '../Assets/product-slider-two.webp'
 import Footer from './Footer';
 import HeaderMain from './HeaderMain';
 
+import modalbag from '../Assets/modal-bag.webp'
+
+import modalphone from '../Assets/modal-call.webp'
+import modallocation from '../Assets/modal-location.webp'
+
 const Productpage: React.FC = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null); // ✅ typed correctly
 
   return (
     <>
 
+{/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> */}
+
+<div className="modal fade productmodal modal-sm" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog modal-dialog-centered">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Store Information</h5>
+        <button type="button" className="product-cross" data-bs-dismiss="modal" aria-label="Close">X</button>
+      </div>
+      <div className="modal-body">
+        <div className='modal-inner'>
+          <div className='modal-icon'>
+            <img src={modalbag} alt=''/>
+          </div>
+
+          <div className='modal-text'>
+              <div className='modal-name'>
+              Store name:
+              </div>
+
+              <div className='modal-brand'>
+            Alpha Strike
+
+                </div>
+          </div>
+          </div>
+
+
+           <div className='modal-inner'>
+          <div className='modal-icon'>
+            <img src={modalphone} alt=''/>
+          </div>
+
+          <div className='modal-text'>
+              <div className='modal-name'>
+              Contact Number:
+              </div>
+
+              <div className='modal-brand'>
+            021-1234567
+
+
+                </div>
+          </div>
+          </div>
+
+
+          <div className='modal-inner'>
+          <div className='modal-icon'>
+            <img src={modallocation} alt=''/>
+          </div>
+
+          <div className='modal-text'>
+              <div className='modal-name'>
+              Address:
+              </div>
+
+              <div className='modal-brand'>
+           Lorem ipsum dolor sit amet.
+
+
+
+                </div>
+          </div>
+          </div>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <HeaderMain/>
     <div className="product-page main-padding">
             <div className='product-detail-page'>
@@ -148,7 +228,7 @@ const Productpage: React.FC = () => {
                                 </div>  
 
 
-                               <button className='product-btn'>Contact Seller</button>
+                               <button className='product-btn' data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Seller</button>
                         </div>
                 </div>
                 </div>

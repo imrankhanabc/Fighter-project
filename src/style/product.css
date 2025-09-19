@@ -186,6 +186,55 @@ button.product-btn{
     margin-bottom: 70px;
 }
 
+.productmodal button.btn-close {
+    display: block;
+}
+
+.productmodal .product-cross{
+        background: none;
+    border: none;
+    padding: 0;
+    color: #fff;
+
+}
+
+.productmodal .modal-title {
+    /* color: #fff; */
+    margin-bottom: 0px !important;
+}
+
+.productmodal .modal-header{
+    justify-content: space-between;
+}
+
+.productmodal .modal-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #4C4C4C;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.productmodal .modal-inner:last-child{
+    border-bottom: none;
+}
+.productmodal .modal-footer {
+    display: none;
+}
+
+
+
+.productmodal .modal-name {
+    color: #989898;
+}
+
+.productmodal .modal-brand {
+    color: #fff;
+}
+.modal-icon img{
+    width: 20px;
+}
+
 @media screen and (max-width: 767px) {
     .product-title {
     font-size: 16px;

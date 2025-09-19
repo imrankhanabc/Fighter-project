@@ -15,6 +15,8 @@ import Forum from "./component/Forum";
 import Commentpage from "./component/Commentpage";
 import Marketplace from "./component/Marketplace";
 import Productpage from "./component/Productpage";
+import Storecreate from "./component/Storecreate";
+import Addproduct from "./component/Addproduct";
 
 function App() {
   return (
@@ -35,6 +37,10 @@ function App() {
         <Route path="/commentpage" element={<Commentpage/>} />
         <Route path="/marketplace" element={<Marketplace/>} />
         <Route path="/productpage" element={<Productpage/>} />
+        <Route path="/storecreate" element={<Storecreate/>} />
+        <Route path="/addproduct" element={<Addproduct/>} />
+
+
 
 
 

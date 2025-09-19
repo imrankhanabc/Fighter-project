@@ -561,6 +561,34 @@ select {
 }
 
 
+/* createstore */
+.upload {
+    justify-content: center;
+    border: 1px dashed;
+    height: 50vh;
+    margin-bottom: 20px;
+    
+
+}
+
+.upload a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6E6E6E;
+
+}
+.upload span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.upload img{
+    width: 20px;
+}
+
+
+
 /* .main-footer{
     margin-top: 165px;
 } */
@@ -591,6 +619,11 @@ select {
 
 
 @media screen and (max-width: 767px) {
+
+    .upload {
+  
+    height: 30vh;
+}
     .create-right {
 
         display: none;
