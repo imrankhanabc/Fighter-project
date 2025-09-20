@@ -17,6 +17,8 @@ import Marketplace from "./component/Marketplace";
 import Productpage from "./component/Productpage";
 import Storecreate from "./component/Storecreate";
 import Addproduct from "./component/Addproduct";
+import Forgotpassword from "./component/Forgotpassword";
+import Verify from "./component/Verify";
 
 function App() {
   return (
@@ -39,6 +41,10 @@ function App() {
         <Route path="/productpage" element={<Productpage/>} />
         <Route path="/storecreate" element={<Storecreate/>} />
         <Route path="/addproduct" element={<Addproduct/>} />
+        <Route path="/forgotpassword" element={<Forgotpassword/>} />
+        <Route path="/verify" element={<Verify/>} />
+
+
 
 
 

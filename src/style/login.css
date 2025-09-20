@@ -567,11 +567,11 @@ select {
     border: 1px dashed;
     height: 50vh;
     margin-bottom: 20px;
-    
+
 
 }
 
-.upload a{
+.upload a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -579,51 +579,99 @@ select {
     color: #6E6E6E;
 
 }
-.upload span{
+
+.upload span {
     font-size: 20px;
     font-weight: 500;
 }
-.upload img{
+
+.upload img {
     width: 20px;
 }
 
-
-
-/* .main-footer{
-    margin-top: 165px;
-} */
-
-/* .footer-up-bg {
-    background-image: url('../Assets/footer-top-bg.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; */
-/* } */
-
-/* .main-footer{
-        background-image: url('../Assets/footer-up-bg.png');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-} */
-
-/* .footer-up-bg{ */
-/* background-image: url('../Assets/footer-sec-bg.webp');
-    background-size: cover;
-    background-position: center;
-} */
 .btn-market {
     display: none;
 }
 
+.f-password a.btn-default {
+    margin-top: 0px;
+}
+
+.forgot-modal .modal-header {
+    display: none;
+}
+
+.forgot-icon img {
+    width: 70px;
+}
+
+.f-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.forgot-inner-content {
+    text-align: center;
+    color: #fff;
+}
+
+.forgot-modal a.btn-default {
+    margin-top: 20px;
+}
+
+.verify-boxes {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.verify-boxes input {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #3F444B;
+    background: #191919;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.v-text {
+    color: #fff;
+    margin-bottom: 20px !important;
+}
+
+.verify-page .btn-default {
+    margin-top: 30px !important;
+}
+
+.verify-page .create-form {
+    width: 68%;
+}
 
 
 @media screen and (max-width: 767px) {
 
+
+    .verify-page .create-form {
+        width: 90%;
+    }
+
+    .verify-boxes {
+        display: flex;
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .f-password a.btn-default {
+        margin-top: 400px !important;
+    }
+
     .upload {
-  
-    height: 30vh;
-}
+
+        height: 30vh;
+    }
+
     .create-right {
 
         display: none;
@@ -681,8 +729,6 @@ select {
 
     .main-footer {
         margin-top: 100px;
-
-
     }
 
     .create-profile-page .btn-default {
