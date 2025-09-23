@@ -6,6 +6,10 @@
     align-items: center;
     gap: 25px;
 }
+
+.vertical-slider-content {
+    margin-top: 25px;
+}
 .reels-page .slider-profile-img img{
     width: 55px;
 }
@@ -501,9 +505,9 @@ width: 50%;
         gap: 10px;
     }
 
-    .reels-page .mySwiper {
+    /* .reels-page .mySwiper {
     height: 85vh !important;
-}
+} */
 
     .forum-data {
         display: flex;

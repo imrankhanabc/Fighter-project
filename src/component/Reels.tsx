@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 // import { Pagination, Scrollbar } from "swiper/modules";
-import { Autoplay } from "swiper/modules";
+import { Autoplay,Mousewheel  } from "swiper/modules";
 
 import sliderprofile from "../Assets/slider-profile.webp";
 import tone from "../Assets/tone-icon.webp";
@@ -38,7 +38,8 @@ const Reels = () => {
                 //     delay: 3000, // 3 seconds per slide
                 //     disableOnInteraction: false, // keep autoplay after user swipes
                 //   }}
-                  modules={[Autoplay]}
+                   modules={[Autoplay, Mousewheel]}  // Add Mousewheel module
+  mousewheel={{ forceToAxis: true, releaseOnEdges: false }} // important
                   className="mySwiper"
                   breakpoints={{
                     768: {

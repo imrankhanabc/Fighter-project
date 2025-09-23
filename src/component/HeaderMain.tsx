@@ -5,10 +5,15 @@ import profile from "../Assets/profile.webp";
 import bag from "../Assets/bag.webp";
 import logout from "../Assets/logout.webp";
 import { NavLink } from "react-router-dom";
+import menuicon from '../Assets/menu-icon.webp'
 
 import "../style/home.css";
+import '../style/login.css'
 
 const HeaderMain = () => {
+
+   const [menuOpen, setMenuOpen] = React.useState(false);
+    const [showInput, setShowInput] = React.useState(false);
   const [open, setOpen] = React.useState(false);
 
   const toggleDropdown = () => {
@@ -19,14 +24,78 @@ const HeaderMain = () => {
     <div className="header-main">
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 col-6">
             <div className="header-logo">
               <img src={headerlogo} alt="logo" />
             </div>
           </div>
 
-          <div className="col-md-5">
-            <div className="header-menu">
+
+           <div className="col-md-4 col-6 formobile">
+            <div className="formobile-setting">
+              <div className="humburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
+              <img src={menuicon} alt=""/>
+            </div>
+            <div className="header-login">
+             
+              <div className="profile-login">
+                {/* Login Image */}
+                <img
+                  src={headerlogin}
+                  alt="login"
+                  onClick={toggleDropdown}
+                  style={{ cursor: "pointer" }}
+                />
+
+                {/* Dropdown Menu */}
+                {open && (
+                  <div className="login-drop">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <div className="login-inner">
+                            <div className="drop-image">
+                              <img src={profile} alt="" />
+                            </div>
+                            <div className="login-text">Profile</div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="storecreate">
+                          <div className="login-inner">
+                            <div className="drop-image">
+                              <img src={bag} alt="" />
+                            </div>
+                            <div className="login-text">View Store</div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <div className="login-inner">
+                            <div className="drop-image">
+                              <img src={logout} alt="" />
+                            </div>
+                            <div className="login-text l-text">Logout</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+              {/*  */}
+            </div>
+              </div>
+            
+          </div>
+
+          {/* <div className="col-md-5 col-12"> */}
+
+            <div className={`col-md-5 col-12 header-menu ${menuOpen ? "show-menu" : ""}`}>
               <ul>
                 <li>
                   <NavLink
@@ -61,72 +130,44 @@ const HeaderMain = () => {
                   </NavLink>
                 </li>
               </ul>
-
-              {/*  */}
-              {/* <ul>
-                                <li><a href='#'>Home</a></li>
-                                <li><a href='#'>Forums</a></li>
-                                
-
-                                <li><a href='#'>Reels</a></li>
-
-                                <li><a href='#'>Marketplace</a></li>
-
-                            </ul> */}
             </div>
-          </div>
 
-          <div className="col-md-4">
+            
+          {/* </div> */}
+
+         
+
+          <div className="col-md-4 fordesktop">
+
+            <div className="humburger-icon">
+              <img src={menuicon} alt=""/>
+            </div>
             <div className="header-login">
-              <div className="header-search">
+              {/* <div className="header-search">
                 <i className="ri-search-line"></i>
-              </div>
-              {/* 
-                            <div className='profile-login'>
-                            <img src={headerlogin} alt='login' />
-
-                             <div className='login-drop'>
-                                <ul>
-                                   <li><a href='#'>
-                                    
-                                    <div className='login-inner'>
-                                        <div className='drop-image'>
-                                                <img src={profile} alt=''/>
-                                        </div>
-
-                                        <div className='login-text'>
-                                        Profile
-                                        </div>
-                                    </div>
-
-
-                                    
-                                    </a></li>
-
-                                    <li><a href='#'> <div className='login-inner'>
-                                        <div className='drop-image'>
-                                                <img src={bag} alt=''/>
-                                        </div>
-
-                                        <div className='login-text'>
-                                       Create Store
-                                        </div>
-                                    </div></a></li>
-
-                                     <li><a href='#'> <div className='login-inner'>
-                                        <div className='drop-image'>
-                                                <img src={logout} alt=''/>
-                                        </div>
-
-                                        <div className='login-text'>
-                                       Logout
-                                        </div>
-                                    </div></a></li>
-                                </ul>
-                            </div>
-                            </div> */}
-
+              </div> */}
               {/*  */}
+              <div 
+        className="header-search-icon" 
+        onClick={() => setShowInput(!showInput)}
+        style={{ cursor: 'pointer' }}
+      >
+           <div className="header-search"> 
+
+        <i className="ri-search-line"></i>
+        </div>
+      </div>
+
+      {/* Conditional Input */}
+      {showInput && (
+        <input 
+          type="text" 
+          placeholder="Search..." 
+          className="header-search-input"
+        />
+      )}
+              {/*  */}
+             
               <div className="profile-login">
                 {/* Login Image */}
                 <img

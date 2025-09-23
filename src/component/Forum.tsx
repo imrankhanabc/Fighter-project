@@ -12,7 +12,12 @@ import great from'../Assets/great.webp';
 import HeaderMain from "./HeaderMain";
 import Footer from "./Footer";
 
+
+ import { useNavigate } from 'react-router-dom';
+
 const Forum = () => {
+ const navigate = useNavigate();
+
   return (
 
     <>
@@ -80,7 +85,9 @@ const Forum = () => {
                     </div>
 
                     <div className="f-chat">
-                      <img src={fchat} alt="fchatimgfrom" />
+                      <img src={fchat} alt="fchatimgfrom"   
+                       onClick={() => navigate('/commentpage')} 
+      style={{cursor: 'pointer'}}/>
                     </div>
 
                     <div className="f-chat">
@@ -151,7 +158,9 @@ const Forum = () => {
                     </div>
 
                     <div className="f-chat">
-                      <img src={fchat} alt="fchatimgfrom" />
+                      <img src={fchat} alt="fchatimgfrom"   
+                       onClick={() => navigate('/commentpage')} 
+      style={{cursor: 'pointer'}}/>
                     </div>
 
                     <div className="f-chat">
@@ -232,7 +241,9 @@ const Forum = () => {
                     </div>
 
                     <div className="f-chat">
-                      <img src={fchat} alt="fchatimgfrom" />
+                      <img src={fchat} alt="fchatimgfrom"   
+                       onClick={() => navigate('/commentpage')} 
+      style={{cursor: 'pointer'}}/>
                     </div>
 
                     <div className="f-chat">
@@ -308,8 +319,10 @@ const Forum = () => {
                       <img src={fheart} alt="fchatimgfrom" />
                     </div>
 
-                    <div className="f-chat">
-                      <img src={fchat} alt="fchatimgfrom" />
+                   <div className="f-chat">
+                      <img src={fchat} alt="fchatimgfrom"   
+                       onClick={() => navigate('/commentpage')} 
+      style={{cursor: 'pointer'}}/>
                     </div>
 
                     <div className="f-chat">
@@ -375,8 +388,10 @@ const Forum = () => {
                       <img src={fheart} alt="fchatimgfrom" />
                     </div>
 
-                    <div className="f-chat">
-                      <img src={fchat} alt="fchatimgfrom" />
+                   <div className="f-chat">
+                      <img src={fchat} alt="fchatimgfrom"   
+                       onClick={() => navigate('/commentpage')} 
+      style={{cursor: 'pointer'}}/>
                     </div>
 
                     <div className="f-chat">

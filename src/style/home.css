@@ -111,12 +111,13 @@ ul {
  .login-drop {
     position: absolute;
     width: 200px;
-    background: #121212;
+    background: #272727;
     right: 0;
     left: unset;
     top: 63px;
     padding: 10px 10px 0px 15px;
     border-radius: 20px;
+    z-index: 3;
 }
 
 .drop-image img{
@@ -602,7 +603,7 @@ a.main-btn:hover {
   .progress-dot {
     position: absolute;
     top: 19px;
-    left: 60%; /* match your progress % */
+    left: 40%; /* match your progress % */
     transform: translate(-50%, -50%);
     width: 12px;
     height: 12px;
@@ -855,6 +856,28 @@ a.main-btn:hover {
     .m-btn{
         display: none;
     }
+
+    /* viewstoreprofile */
+
+    .viewstore-profile .f-s-name {
+    font-size: 25px;
+    }
+
+     .viewstore-profile .f-s-title {
+    font-size: 18px;
+}
+
+.viewstore-profile .f-s-desc {
+    font-size: 14px;
+    /* width: 85%; */
+}
+
+
+.viewstore-profile .fightersliderpage-inner.slider-iiner-images img {
+    background: #2f2f2f;
+    padding: 70px 40px;
+}
+
    
 
 
@@ -863,6 +886,10 @@ a.main-btn:hover {
 
     .main-padding{
         padding: 20px 0px;
+    }
+
+    .comment-modal-inner h5{
+        text-align: center;
     }
 
     .hero-left {

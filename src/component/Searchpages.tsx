@@ -42,7 +42,7 @@ const Searchpages = () => {
                 <div
                   className="progress-bar custom-progress"
                   role="progressbar"
-                  style={{ width: "60%", backgroundColor: "#D08002" }} // <-- set progress dynamically
+                  style={{ width: "40%", backgroundColor: "#D08002" }} // <-- set progress dynamically
                   aria-valuenow={60}
                   aria-valuemin={0}
                   aria-valuemax={100}

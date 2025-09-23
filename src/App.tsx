@@ -19,12 +19,13 @@ import Storecreate from "./component/Storecreate";
 import Addproduct from "./component/Addproduct";
 import Forgotpassword from "./component/Forgotpassword";
 import Verify from "./component/Verify";
+import Viewstore from "./component/Viewstore";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/header" element={<Header/>} />
+        {/* <Route path="/header" element={<Header/>} /> */}
         <Route path="/createaccount" element={<CreateAccount/>} />
         <Route path="/signup" element={<Singup/>} />
         <Route path="/createprofile" element={<CreateProfile/>} />
@@ -43,6 +44,9 @@ function App() {
         <Route path="/addproduct" element={<Addproduct/>} />
         <Route path="/forgotpassword" element={<Forgotpassword/>} />
         <Route path="/verify" element={<Verify/>} />
+        <Route path="/viewstore" element={<Viewstore/>} />
+
+
 
 
 

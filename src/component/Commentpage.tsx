@@ -2,6 +2,8 @@ import React from 'react'
 
 import '../style/home.css'
 
+
+
 import forumprofile from "../Assets/forum-profile.webp";
 
 import fchat from "../Assets/f-chat.webp";
@@ -283,6 +285,7 @@ const Commentpage = () => {
                       <img src={fshare} alt="fchatimgfrom"
                       data-bs-toggle="modal"
     data-bs-target="#exampleModal"
+      style={{cursor: 'pointer'}}
                       />
                     </div>
                   </div>

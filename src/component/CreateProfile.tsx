@@ -40,7 +40,7 @@ const CreateProfile = () => {
   return (
     <>
 
-    <Header/>
+    {/* <Header/> */}
     <div className='create-profile-page'>
         <div className='create-profile-heading'>
             <div className='profile-title'>

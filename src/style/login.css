@@ -648,9 +648,77 @@ select {
 .verify-page .create-form {
     width: 68%;
 }
+.header-search-input{
+    background: none;
+    border: none;
+    color: #fff;
+}
+.humburger-icon{
+    display: none;
+}
+
+
+.formobile{
+    display: none;
+}
+.fordesktop{
+    display: block;
+}
+
+
+
 
 
 @media screen and (max-width: 767px) {
+
+
+      .header-menu {
+    display: none;          /* hidden on mobile */
+    position: absolute;     /* overlay content */
+    top: 60px;              /* adjust header height */
+    right: 70px;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    padding: 10px 0;
+  }
+
+  .header-menu.show-menu {
+   display: block;
+        background: #272727;
+        width: 60%;
+        border-radius: 20px;
+          /* show when menuOpen is true */
+  }
+
+  .header-menu ul {
+    display: block !important;
+  }
+
+  .header-menu ul li {
+    padding: 15px 0px;
+}
+ .header-menu ul li a {
+    padding:0px;
+ }
+    .fordesktop{
+    display: none;
+}
+
+.formobile{
+    display: block;
+}
+   .formobile-setting{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    align-items: center;
+}
+
+.humburger-icon{
+    display: block;
+}
+
 
 
     .verify-page .create-form {

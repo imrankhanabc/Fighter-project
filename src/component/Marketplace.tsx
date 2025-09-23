@@ -5,6 +5,7 @@ import '../style/reel.css'
 import mone from '../Assets/m-p-one.webp'
 import Footer from './Footer'
 import HeaderMain from './HeaderMain'
+import { Link } from "react-router-dom"; // make sure you import Link
 
 const Marketplace = () => {
   return (
@@ -46,6 +47,7 @@ const Marketplace = () => {
 
 
             <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -84,9 +86,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -125,9 +129,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -166,9 +172,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -207,9 +215,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -248,9 +258,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -289,9 +301,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -330,9 +344,11 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
 
-             <div className='col-md-3 col-6'>
+            <div className='col-md-3 col-6'>
+                 <Link to="/productpage" style={{ textDecoration: "none", color: "inherit" }}>
                     <div className='marketplace-product'>
                         <div className='product-image'>
                             <img src={mone} alt='mone' />
@@ -371,7 +387,10 @@ const Marketplace = () => {
                         </div>
 
             </div>
+            </Link>
             </div>
+
+          
                 </div>
             </div>
 
