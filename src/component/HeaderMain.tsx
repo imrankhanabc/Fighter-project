@@ -7,6 +7,8 @@ import logout from "../Assets/logout.webp";
 import { NavLink } from "react-router-dom";
 import menuicon from '../Assets/menu-icon.webp'
 
+import { Link } from "react-router-dom";
+
 import "../style/home.css";
 import '../style/login.css'
 
@@ -63,14 +65,14 @@ const HeaderMain = () => {
                       </li>
 
                       <li>
-                        <a href="storecreate">
+                           <Link to="/viewstore">
                           <div className="login-inner">
                             <div className="drop-image">
                               <img src={bag} alt="" />
                             </div>
                             <div className="login-text">View Store</div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
 
                       <li>
@@ -193,14 +195,14 @@ const HeaderMain = () => {
                       </li>
 
                       <li>
-                        <a href="storecreate">
+                       <Link to="/viewstore">
                           <div className="login-inner">
                             <div className="drop-image">
                               <img src={bag} alt="" />
                             </div>
                             <div className="login-text">View Store</div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
 
                       <li>

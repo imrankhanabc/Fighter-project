@@ -67,7 +67,6 @@ const Viewstore = () => {
               <img src={viewstoreimage} alt="sliderinnerone" />
               <img src={viewstoreimage} alt="sliderinnerone" />
               <img src={viewstoreimage} alt="sliderinnerone" />
-              <img src={viewstoreimage} alt="sliderinnerone" />
             </div>
           </div>
         </div>
