@@ -10,6 +10,14 @@ import HeaderMain from './HeaderMain'
 
 
 const Searchpages = () => {
+ const [progress, setProgress] = React.useState<number>(40);
+
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const bar = e.currentTarget;
+    const rect = bar.getBoundingClientRect();
+    const newProgress = ((e.clientX - rect.left) / rect.width) * 100;
+    setProgress(Math.min(100, Math.max(0, newProgress)));
+  };
   return (
 
     <>
@@ -36,32 +44,44 @@ const Searchpages = () => {
               ></button>
             </div>
             <div className="modal-body">
-                
-                <div className="progress">
-                    
-                <div
-                  className="progress-bar custom-progress"
-                  role="progressbar"
-                  style={{ width: "40%", backgroundColor: "#D08002" }} // <-- set progress dynamically
-                  aria-valuenow={60}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                >
-                  {/* 60% */}
-                </div>
-                <span className="progress-label">Age (18)</span>
-                <span className="progress-dot"></span>
+{/*  */}
 
-                <div className='number-bar'>
-                    <div className='number'>
-                        0
-                    </div>
-                    <div className='number'>
-                        30
-                    </div>
-                    
-                </div>
-              </div>
+
+  
+
+
+
+              {/*  */}
+                
+                 <div className="progress" onClick={handleClick}>
+      <div
+        className="progress-bar custom-progress"
+        role="progressbar"
+        style={{
+          width: `${progress}%`,
+          backgroundColor: "#D08002",
+          transition: "width 0.3s ease",
+        }}
+        aria-valuenow={progress}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      ></div>
+
+      <span className="progress-label">Age ({Math.round(progress)})</span>
+
+   <span
+  className="progress-dot"
+  style={{
+    left: `calc(${progress}% - 6px)`, // keep dot inside at 0% and 100%
+    transform: "translateY(-50%)",    // only vertical centering
+  }}
+></span>
+
+      <div className="number-bar">
+        <div className="number">0</div>
+        <div className="number">30</div>
+      </div>
+    </div>
                     <div className='city-option'>
                         <div className='city-text'>
                         City (2)

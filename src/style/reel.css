@@ -448,7 +448,7 @@ width: 50%;
 
 
 @media screen and (max-width: 767px) {
-    .slider-profile-img img {
+    .reels-page .slider-profile-img img {
         width: 40px;
     }
 
@@ -466,7 +466,7 @@ width: 50%;
     }
 
     .track-name {
-        font-size: 11px;
+        font-size: 10px;
         margin-top: 0px;
     }
 
@@ -500,7 +500,7 @@ width: 50%;
 .slider-main-image img {
     width: 100%;
 }
-    .slider-profile-data {
+    .reels-page .slider-profile-data {
       
         gap: 10px;
     }

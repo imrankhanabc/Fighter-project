@@ -588,11 +588,23 @@ a.main-btn:hover {
 }
 /* modal */
 
+
+.search-modal .modal-content{
+    padding:  20px;
+}
+
+.search-modal .modal-body{
+    padding: 0px;
+}
+.search-modal .modal-header{
+    padding: 0px;
+}
+
 .progress-bar {
-    user-select: none;   /* Prevent text selection */
+    user-select: none;   
     cursor: default;
     height: 6px;
-    border-radius: 10px;     /* Cursor won't look like text */
+    border-radius: 10px;     
     position: relative;
   }
 
@@ -600,16 +612,18 @@ a.main-btn:hover {
     background-color: #D08002 !important;
   }
 
-  .progress-dot {
-    position: absolute;
-    top: 19px;
-    left: 40%; /* match your progress % */
-    transform: translate(-50%, -50%);
-    width: 12px;
-    height: 12px;
-    background-color: #D08002; /* your color */
-    border-radius: 50%;
-  }
+  
+
+
+ .progress-dot {
+  position: absolute;
+  top: 3px;           /* use 50% instead of fixed 19px */
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: #D08002;
+  border-radius: 50%;
+}
   .city-option{
     margin-top:40px;
     color: #fff;
@@ -642,21 +656,21 @@ a.main-btn:hover {
   }
   .modal-title{
     color: #fff;
-    margin-bottom: 20px !important;
+    margin-bottom: 45px !important;
   }
   button.btn-close{
     display: none;
   }
 
-  .progress-label {
+ .progress-label {
     position: absolute;
-    top: -20px; /* moves text above */
-    left: 43px;  /* same % as progress */
+    top: -31px;
+    left: 25px;
     transform: translateX(-50%);
     font-size: 14px;
-    color: #fff; /* white text */
+    color: #fff;
     font-weight: 500;
-  }
+}
 
   button.active {
     background: #343434;
@@ -698,15 +712,16 @@ a.main-btn:hover {
         border-top: none !important;
     }
 
-    .number-bar{
-        position: absolute;
-        color: #737373;
-        display: flex;
-        justify-content: space-between;
-        width: 94%;
-        top: 27px;
-    
-    }
+   .number-bar {
+    position: absolute;
+    color: #737373;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 11px;
+    right: 0;
+    left: 0;
+}
     .radio-option{
         color: #fff;
         margin-top: 20px;
@@ -749,7 +764,7 @@ a.main-btn:hover {
         color: #D08002;
         text-decoration: none;
         border: 1px solid #D08002;
-        padding: 10px 83px;
+        padding: 10px 70px;
         border-radius: 10px;
     }
     .footer-modal a.apply{
@@ -910,6 +925,7 @@ a.main-btn:hover {
     .hero-left {
     width: 100%;
     text-align: center;
+    padding-top: 40px;
 }
 
 .hero-title {
@@ -960,7 +976,8 @@ a.main-btn:hover {
         margin-top: 40px;
     }
     .forum-section .f-title{
-        font-size: 27px;
+        font-size: 25px;
+        margin-top: 0px;
     }
     .faqs-left{
         text-align: center;
