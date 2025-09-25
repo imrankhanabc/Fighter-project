@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateAccount from "./component/CreateAccount";
 import Singup from "./component/Singup";
@@ -20,10 +20,19 @@ import Addproduct from "./component/Addproduct";
 import Forgotpassword from "./component/Forgotpassword";
 import Verify from "./component/Verify";
 import Viewstore from "./component/Viewstore";
+import Skeleton from "./component/Skeleton";
 
 function App() {
+    const [loading, setLoading] = useState(true);
+
+      useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+  
   return (
     <BrowserRouter>
+     <Skeleton loading={loading}>
       <Routes>
         {/* <Route path="/header" element={<Header/>} /> */}
         <Route path="/createaccount" element={<CreateAccount/>} />
@@ -45,29 +54,8 @@ function App() {
         <Route path="/forgotpassword" element={<Forgotpassword/>} />
         <Route path="/verify" element={<Verify/>} />
         <Route path="/viewstore" element={<Viewstore/>} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
       </Routes>
+      </Skeleton>
     </BrowserRouter>
   );
 }
