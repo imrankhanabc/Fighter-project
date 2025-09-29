@@ -22,6 +22,9 @@ import modalbag from '../Assets/modal-bag.webp'
 import modalphone from '../Assets/modal-call.webp'
 import modallocation from '../Assets/modal-location.webp'
 
+import mone from '../Assets/m-p-one.webp'
+
+
 const Productpage: React.FC = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null); // ✅ typed correctly
 
@@ -231,7 +234,7 @@ const Productpage: React.FC = () => {
                                <button className='product-btn' data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Seller</button>
                         </div>
                 </div>
-                </div>
+                {/* </div> */}
 
 
                 <div className='col-md-12'>
@@ -245,6 +248,172 @@ const Productpage: React.FC = () => {
             </div>
         </div>
                 </div>
+
+                <div className='col-md-3 col-6'>
+                                    <div className='marketplace-product'>
+                                        <div className='product-image'>
+                                            <img src={mone} alt='mone' />
+                                        </div>
+                
+                                        <div className='produt-detail'>
+                
+                                            <div className='product-title-icon'>
+                                                <div className='product-title'>
+                                                    UFC Bag pack
+                                                    </div>
+                
+                                                    <div className='icon'>
+                                                        <i className="ri-heart-line"></i>
+                                                    </div>
+                                            </div>
+                
+                                            <div className='product-desc'>
+                                                    UFC Ultimate Fighting  Official Collection Backpack
+                                            </div>
+                
+                                            <div className='product-price'>
+                                                <div className='price-text'>
+                                                    Price
+                                                </div>
+                                                <div className='m-price'>
+                                                    $100
+                                                </div>  
+                
+                                        </div>
+                
+                                        <div className='p-button'>
+                                                <button>BUY NOW</button>
+                                        </div>
+                
+                                        </div>
+                
+                            </div>
+                            </div>
+
+                             <div className='col-md-3 col-6'>
+                                    <div className='marketplace-product'>
+                                        <div className='product-image'>
+                                            <img src={mone} alt='mone' />
+                                        </div>
+                
+                                        <div className='produt-detail'>
+                
+                                            <div className='product-title-icon'>
+                                                <div className='product-title'>
+                                                    UFC Bag pack
+                                                    </div>
+                
+                                                    <div className='icon'>
+                                                        <i className="ri-heart-line"></i>
+                                                    </div>
+                                            </div>
+                
+                                            <div className='product-desc'>
+                                                    UFC Ultimate Fighting  Official Collection Backpack
+                                            </div>
+                
+                                            <div className='product-price'>
+                                                <div className='price-text'>
+                                                    Price
+                                                </div>
+                                                <div className='m-price'>
+                                                    $100
+                                                </div>  
+                
+                                        </div>
+                
+                                        <div className='p-button'>
+                                                <button>BUY NOW</button>
+                                        </div>
+                
+                                        </div>
+                
+                            </div>
+                            </div>
+
+                             <div className='col-md-3 col-6'>
+                                    <div className='marketplace-product'>
+                                        <div className='product-image'>
+                                            <img src={mone} alt='mone' />
+                                        </div>
+                
+                                        <div className='produt-detail'>
+                
+                                            <div className='product-title-icon'>
+                                                <div className='product-title'>
+                                                    UFC Bag pack
+                                                    </div>
+                
+                                                    <div className='icon'>
+                                                        <i className="ri-heart-line"></i>
+                                                    </div>
+                                            </div>
+                
+                                            <div className='product-desc'>
+                                                    UFC Ultimate Fighting  Official Collection Backpack
+                                            </div>
+                
+                                            <div className='product-price'>
+                                                <div className='price-text'>
+                                                    Price
+                                                </div>
+                                                <div className='m-price'>
+                                                    $100
+                                                </div>  
+                
+                                        </div>
+                
+                                        <div className='p-button'>
+                                                <button>BUY NOW</button>
+                                        </div>
+                
+                                        </div>
+                
+                            </div>
+                            </div>
+
+                             <div className='col-md-3 col-6'>
+                                    <div className='marketplace-product'>
+                                        <div className='product-image'>
+                                            <img src={mone} alt='mone' />
+                                        </div>
+                
+                                        <div className='produt-detail'>
+                
+                                            <div className='product-title-icon'>
+                                                <div className='product-title'>
+                                                    UFC Bag pack
+                                                    </div>
+                
+                                                    <div className='icon'>
+                                                        <i className="ri-heart-line"></i>
+                                                    </div>
+                                            </div>
+                
+                                            <div className='product-desc'>
+                                                    UFC Ultimate Fighting  Official Collection Backpack
+                                            </div>
+                
+                                            <div className='product-price'>
+                                                <div className='price-text'>
+                                                    Price
+                                                </div>
+                                                <div className='m-price'>
+                                                    $100
+                                                </div>  
+                
+                                        </div>
+                
+                                        <div className='p-button'>
+                                                <button>BUY NOW</button>
+                                        </div>
+                
+                                        </div>
+                
+                            </div>
+                            </div>
+                </div>
+
         </div>
             </div>
        
