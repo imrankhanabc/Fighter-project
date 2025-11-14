@@ -1,19 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import '../style/reel.css'
+import "../style/reel.css";
 
-import mone from '../Assets/m-p-one.webp'
-import Footer from './Footer'
-import HeaderMain from './HeaderMain'
+import mone from "../Assets/m-p-one.webp";
+import Footer from "./Footer";
+import HeaderMain from "./HeaderMain";
 import { Link } from "react-router-dom"; // make sure you import Link
 
 const Marketplace = () => {
   return (
-
     <>
-
-    <HeaderMain/>
-    <div className='marketplace-page'>
+      <HeaderMain />
+      <div className='marketplace-page'>
 
         
             <div className='container'>
@@ -398,9 +396,13 @@ const Marketplace = () => {
            
     </div>
 
-    <Footer/>
-    </>
-  )
-}
+      {/*  */}
 
-export default Marketplace
+     
+
+      <Footer />
+    </>
+  );
+};
+
+export default Marketplace;

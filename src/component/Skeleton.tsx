@@ -8,6 +8,7 @@ type SkeletonProps = {
 const Skeleton: React.FC<SkeletonProps> = ({ loading, children }) => {
   if (loading) {
     return (
+      <div className="skeleton-wrapper">
       <div className="skeleton-container">
         <div className="skeleton skeleton-title"></div>
         <div className="skeleton skeleton-text"></div>
@@ -15,6 +16,11 @@ const Skeleton: React.FC<SkeletonProps> = ({ loading, children }) => {
         <div className="skeleton skeleton-card"></div>
         <div className="skeleton skeleton-card"></div>
         <div className="skeleton skeleton-card"></div>
+
+           <div className="skeleton skeleton-card"></div>
+        <div className="skeleton skeleton-card"></div>
+        <div className="skeleton skeleton-card"></div>
+      </div>
       </div>
     );
   }

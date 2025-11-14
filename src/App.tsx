@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateAccount from "./component/CreateAccount";
 import Singup from "./component/Singup";
-import Header from "./component/Header";
+// import Header from "./component/Header";
 import CreateProfile from "./component/CreateProfile";
 import Footer from "./component/Footer";
 import HeaderMain from "./component/HeaderMain";
@@ -21,6 +21,11 @@ import Forgotpassword from "./component/Forgotpassword";
 import Verify from "./component/Verify";
 import Viewstore from "./component/Viewstore";
 import Skeleton from "./component/Skeleton";
+// import Marketplaceskelton from "./component/Skelton/Marketplaceskelton";
+
+
+
+
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -47,7 +52,7 @@ function App() {
         <Route path="/reels" element={<Reels/>} />
         <Route path="/forum" element={<Forum/>} />
         <Route path="/commentpage" element={<Commentpage/>} />
-        <Route path="/marketplace" element={<Marketplace/>} />
+        <Route path="/marketplace" element={<Marketplace/>}/>
         <Route path="/productpage" element={<Productpage/>} />
         <Route path="/storecreate" element={<Storecreate/>} />
         <Route path="/addproduct" element={<Addproduct/>} />
@@ -57,6 +62,41 @@ function App() {
       </Routes>
       </Skeleton>
     </BrowserRouter>
+
+
+
+
+// 
+
+
+//  <BrowserRouter>
+//       {/* Full height wrapper */} 
+//        <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+//         <Skeleton loading={loading}>
+//           <Routes>
+//             <Route path="/createaccount" element={<CreateAccount />} />
+//             <Route path="/signup" element={<Singup />} />
+//             <Route path="/createprofile" element={<CreateProfile />} />
+//             <Route path="/footer" element={<Footer />} />
+//             <Route path="/mainheader" element={<HeaderMain />} />
+//             <Route path="/" element={<Heropanel />} />
+//             <Route path="/fightersliderpage" element={<FighterSliderpage />} />
+//             <Route path="/searchpage" element={<Searchpages />} />
+//             <Route path="/fightersliderpagesec" element={<FighterSliderpagesec />} />
+//             <Route path="/reels" element={<Reels />} />
+//             <Route path="/forum" element={<Forum />} />
+//             <Route path="/commentpage" element={<Commentpage />} />
+//             <Route path="/marketplace" element={<Marketplace />} />
+//             <Route path="/productpage" element={<Productpage />} />
+//             <Route path="/storecreate" element={<Storecreate />} />
+//             <Route path="/addproduct" element={<Addproduct />} />
+//             <Route path="/forgotpassword" element={<Forgotpassword />} />
+//             <Route path="/verify" element={<Verify />} />
+//             <Route path="/viewstore" element={<Viewstore />} />
+//           </Routes>
+//         </Skeleton> 
+//        </div>
+//     </BrowserRouter>
   );
 }
 

@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,9 +16,26 @@ code {
     monospace;
 }
 
+/* html, body, #root {
+  height: 100%;
+}
+
+.skeleton-wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+
+.skeleton-container {
+  width: 100%;
+  flex: 1;
+  padding: 30px;
+}
+
+
 
 .skeleton {
   background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+
   background-size: 200% 100%;
   animation: skeleton-loading 1.5s infinite;
   border-radius: 6px;
@@ -45,4 +64,4 @@ code {
   100% {
     background-position: 200% 0;
   }
-}
+} */
